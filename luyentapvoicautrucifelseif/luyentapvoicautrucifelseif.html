@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập với cấu trúc if else if</title>
+</head>
+<body>
+<script>
+
+
+    /*Viết chương trình kiểm tra đăng nhập hệ thống của người dùng theo yêu cầu sau
+
+    Yêu cầu người dùng nhập tên từ bàn phím.
+
+        Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu.
+        Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome.
+        Nếu mật khẩu nhập vào là null in ra chuỗi Canceled.
+        Còn lại in ra chuỗi Wrong password.
+        Nếu tên nhập vào là null in ra chuỗi canceld.
+        Còn lại in ra chuỗi “I don’t know you"*/
+
+    let userName = prompt("Who's there?", '');
+
+    if (userName == 'Admin') {
+        //code vào đây
+    } else if (userName == null) {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
+
+    let pass = prompt('Password?', '');
+
+    if (pass == 'TheMaster') {
+        alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
+    }
+
+
+</script>
+</body>
+</html>
